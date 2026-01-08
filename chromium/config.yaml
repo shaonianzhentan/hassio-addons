@@ -1,0 +1,20 @@
+name: "Chromium (Debug)"
+slug: "chromium"
+description: "Headless Chromium with remote debugging port (CDP)"
+version: "1.0.0"
+
+arch:
+  - amd64
+  - aarch64
+
+startup: services
+boot: auto
+
+ports:
+  9222/tcp: 9222
+
+options:
+  startup_url: "about:blank"
+
+schema:
+  startup_url: str
