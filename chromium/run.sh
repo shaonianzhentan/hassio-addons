@@ -1,8 +1,6 @@
 #!/usr/bin/with-contenv bashio
 
-URL=$(bashio::config 'startup_url')
-
-echo "Starting headless Chromium with CDP..."
+echo "Starting Chromium with debug port..."
 
 chromium \
   --headless=new \
@@ -11,7 +9,6 @@ chromium \
   --no-sandbox \
   --disable-gpu \
   --disable-dev-shm-usage \
-  "$URL" &
+  about:blank
 
-# Keep container alive
-tail -f /dev/null
+echo "Chromium exited, container will stop."

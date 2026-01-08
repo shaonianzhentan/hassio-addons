@@ -1,4 +1,4 @@
-# chromium_addon
+# Chromium Addon
 
 Home Assistant Add-on that runs **headless Chromium** and exposes a **Chrome DevTools Protocol (CDP)** debug port.
 

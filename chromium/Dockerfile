@@ -1,6 +1,6 @@
-FROM mcr.microsoft.com/playwright/python:v1.43.0-jammy
+FROM ghcr.io/home-assistant/base:latest
 
-ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
+RUN apk add --no-cache chromium
 
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
