@@ -1,7 +1,7 @@
 name: "Chromium Debug"
 slug: "chromium"
 description: "Headless Chromium with CDP debug port"
-version: "1.0.0"
+version: "1.0.1"
 
 arch:
   - amd64
